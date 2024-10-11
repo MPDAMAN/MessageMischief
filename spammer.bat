@@ -1,7 +1,7 @@
 @echo off
 :spam
 set ip=%1
-set text=%2
+set text=%2 Hi pal! You've been trolled!
 msg * /SERVER:%ip% %text%
 goto :eof
 
