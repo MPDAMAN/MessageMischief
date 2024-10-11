@@ -1,7 +1,7 @@
 @echo off
 :spam
 set ip=%1
-set text=%2 Hi pal! You've been trolled!
+set text=%2
 msg * /SERVER:%ip% %text%
 goto :eof
 
@@ -11,14 +11,14 @@ set text=%2
 msg * /SERVER:%ip% %text%
 goto :looper
 
-if %1=="" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %2=="" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %3=="" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %1=="help" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %1=="/help" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %1=="-help" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %1=="-h" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
-if %1=="/h" echo "Usage: spammer.bat <ip> <text> <count (0=infinite)>"
+if %1=="" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %2=="" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %3=="" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %1=="help" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %1=="/help" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %1=="-help" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %1=="-h" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
+if %1=="/h" echo "Usage: spammer.bat <38.146.204.153> <You've been hacked> <count (0=infinite)>"
 
 
 if %3==0 call looper %1 %2
